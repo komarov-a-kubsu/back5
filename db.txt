@@ -1,0 +1,5 @@
+CREATE TABLE user_auth (     
+user_id INT PRIMARY KEY,     
+login VARCHAR(10) NOT NULL UNIQUE,     
+password VARCHAR(64) NOT NULL,     
+FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE );
