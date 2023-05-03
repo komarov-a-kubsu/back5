@@ -40,3 +40,38 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #8fd3f4;
 }
+
+.alert {
+    padding: 15px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+ 
+.alert-danger {
+    background-color: rgba(255, 76, 76, 0.8);
+    border-color: rgba(255, 76, 76, 0.8);
+    color: #ffffff;
+}
+ 
+.alert-success {
+    background-color: rgba(76, 255, 76, 0.8);
+    border-color: rgba(76, 255, 76, 0.8);
+    color: #ffffff;
+}
+
+/*.success-container {
+    background-color: rgba(0, 128, 0, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}*/
+
+.success {
+  background-color: rgba(0, 255, 0, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}

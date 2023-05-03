@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $gender = $_POST['gender'];
     $limbs = $_POST['limbs'];
     $bio = $_POST['bio'];
-    $contract = isset($_POST['contract']) ? 1 : 0;
+    $contract = 1;
  
     $stmt = $db->prepare("UPDATE users SET name = ?, email = ?, birth_year = ?, gender = ?, limbs = ?, bio = ?, contract = ? WHERE id = ?");
     $stmt->execute([$name, $email, $birth_year, $gender, $limbs, $bio, $contract, $user_id]);
